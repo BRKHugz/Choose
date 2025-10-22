@@ -16,27 +16,27 @@ O objetivo principal do projeto é desenvolver uma plataforma moderna e prática
 
 🧠 FUNCIONALIDADES PREVISTAS:
 ✅ Pesquisa de carros e motos
-✅ Filtros presonalizados
-✅ Comparativo de preços e especificações
-✅ Recomendação personalizada de veículos
-✅ Interface adaptável para dispositivos móveis
+/✅ Filtros presonalizados
+/✅ Comparativo de preços e especificações
+/✅ Recomendação personalizada de veículos
+/✅ Interface adaptável para dispositivos móveis
 
 🛠️ TECNOLOGIAS UTILIZADAS:
 As tecnologias podem variar conforme o andamento do projeto, mas estão previstas:
 Frontend: HTML, CSS, Angula
-Backend: Java / Spring Boot
+/ Backend: Java, Spring Boot
 Versionamento: Git e GitHub
 Design: Figma
 
 👥 EQUIPE:
 Luiz Fernando - PO
-Hugo vinicius - Scrun Master
-Michel Serpa - Desenvolvedor
-Thaina Pontes - Desenvolvedora
-Lucas Vinicius - Desenvolvedor
+,Hugo vinicius - Scrun Master
+,Michel Serpa - Desenvolvedor
+,Thaina Pontes - Desenvolvedora
+,Lucas Vinicius - Desenvolvedor
 
 📅 STATUS DO PROJETO:
---> Em desenvolvimento..
+ Em desenvolvimento..
 
 📎Link para o Diagrama de atividades ![Diagrama de atividades](https://github.com/BRKHugz/Choose/blob/main/fluxo%20de%20telas.jpeg)
 
