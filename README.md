@@ -43,13 +43,15 @@ imagem do Diagrama de Atividde:
 
 
 Imagem da tela principal do Figma:
-![Tela do figma](https://github.com/user-attachments/assets/04206a76-6384-4dd5-9ed3-57f01c5c9d17)
 link do Figma:  https://www.figma.com/design/7Dgi71a9BuPzyVhzDH1lmZ?node-id=0-1
+![Tela do figma](https://github.com/user-attachments/assets/04206a76-6384-4dd5-9ed3-57f01c5c9d17)
 
 
-Imagem da tela do Trello;
-![Tela do Trello](https://github.com/user-attachments/assets/51b89089-89c9-475a-b253-3dec2f5ff93a)
+
+Imagem da tela do Trello:
 Link do Trello: https://trello.com/b/INVQ9DGz/entrega-01-fds
+![Tela do Trello](https://github.com/user-attachments/assets/51b89089-89c9-475a-b253-3dec2f5ff93a)
+
 
 
 
