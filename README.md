@@ -40,3 +40,6 @@ Luiz Fernando - PO
 
 📎Link para o Diagrama de atividades ![Diagrama de atividades](https://github.com/BRKHugz/Choose/blob/main/fluxo%20de%20telas.jpeg)
 
+
+<img width="1365" height="766" alt="image" src="https://github.com/user-attachments/assets/04206a76-6384-4dd5-9ed3-57f01c5c9d17" />
+
