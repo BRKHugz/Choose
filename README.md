@@ -42,6 +42,7 @@ imagem do Diagrama de Atividde:
 ![Diagrama de atividades](https://github.com/BRKHugz/Choose/blob/main/fluxo%20de%20telas.jpeg)
 
 
+
 Link e Imagem da tela principal do Figma:
 
 link do Figma:  https://www.figma.com/design/7Dgi71a9BuPzyVhzDH1lmZ?node-id=0-1
