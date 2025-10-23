@@ -58,7 +58,12 @@ Link do Trello: https://trello.com/b/INVQ9DGz/entrega-01-fds
 
 
 video do Figma:
-![Video do figma](https://github.com/BRKHugz/Choose/blob/main/Choose%20video.mp4)
+
+
+https://github.com/user-attachments/assets/61aeb8ca-fe7e-40b5-99a3-6be82ebb57f0
+
+
+
 
 
 
