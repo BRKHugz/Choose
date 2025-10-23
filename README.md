@@ -1,8 +1,8 @@
-🚗 CHOOCE — Plataforma de Comparativos de Preço e Automóveis
+🚗 CHOOSE — Plataforma de Comparativos de Preço e Automóveis
 
 🧾 SOBRE O PROJETO:
 
-O AutoCompare é uma plataforma web que permite aos usuários pesquisar e comparar carros e motos sem precisar sair de casa.
+O Choose é uma plataforma web que permite aos usuários pesquisar e comparar carros e motos sem precisar sair de casa.
 A proposta é facilitar a escolha do veículo ideal, mostrando preços, modelos, especificações e comparações com outras lojas.
 Além disso, o sistema contará com:
 Filtros personalizados para buscas mais precisas;
@@ -54,6 +54,11 @@ Link e Imagem da tela do Trello:
 
 Link do Trello: https://trello.com/b/INVQ9DGz/entrega-01-fds
 ![Tela do Trello](https://github.com/user-attachments/assets/51b89089-89c9-475a-b253-3dec2f5ff93a)
+
+
+
+video do Figma:
+![Video do figma](https://github.com/BRKHugz/Choose/blob/main/Choose%20video.mp4)
 
 
 
