@@ -1,5 +1,7 @@
 package projeto_choose;
 
+import java.util.Scanner;
+
 public class Cadastro {
 
     private String nome;
@@ -22,8 +24,36 @@ public class Cadastro {
     }
     public String getEmail() {
         return this.email;
-    } 
+    }
+
+    public void cadastrar(){
+        Scanner input = new Scanner(System.in);
+        System.out.println("\n**************************");
+        System.out.println("  📲 ÁREA DE CADASTRO 📲");
+        System.out.println("**************************\n");
+
+        System.out.print("👤 Informe seu nome: "); 
+        String nome = input.nextLine();
+        this.nome = nome;
+
+        System.out.print("🆔 Informe seu CPF: "); 
+        String cpf = input.nextLine();
+        this.cpf = cpf;
+
+        System.out.print("📍 Informe seu região: "); 
+        String regiao = input.nextLine();
+        this.regiao = regiao;
+
+        System.out.print("🎂 Informe seu idade: "); 
+        int idade = input.nextInt();
+        this.idade = idade;
+        input.nextLine(); // apenas para consumir com o enter, porque o nextInt não consome
+
+        System.out.print("📧 Informe seu e-mail: "); 
+        String email = input.nextLine();
+        this.email = email;
+
+        System.out.println("\nUsuário cadastrado com sucesso! ✅\n");
+        input.close();
+    }
 }
-
-
-
