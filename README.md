@@ -51,6 +51,22 @@ O projeto está em andamento. Novas funcionalidades serão implementadas e atual
 
 ---
 
-## Diagrama de Atividade
-- ![Unknown](https://github.com/user-attachments/assets/5febc01f-d84c-4335-a78a-f953854a7509)
+## Tela do Trello:
+- ![trello](https://github.com/user-attachments/assets/f4d32834-895f-4e4a-8ca2-2938d90da40d)
+
+---
+
+## Diagrama de Atividade:
+- ![diagrama de atividade](https://github.com/user-attachments/assets/5febc01f-d84c-4335-a78a-f953854a7509)
+
+---
+
+## Tela do Figma:
+- ![figma](https://github.com/user-attachments/assets/d3412d75-6836-4451-86c6-5b0287198623)
+
+---
+
+## Vidéo do Figma:
+-
+
 
