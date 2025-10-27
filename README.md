@@ -49,3 +49,8 @@ O projeto está em andamento. Novas funcionalidades serão implementadas e atual
 - **Dev**: Michel Serpa
 - **Dev**: Lucas Vinicius
 
+---
+
+## Diagrama de Atividade
+- ![Unknown](https://github.com/user-attachments/assets/5febc01f-d84c-4335-a78a-f953854a7509)
+
