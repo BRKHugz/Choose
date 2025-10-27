@@ -44,29 +44,31 @@ O projeto está em andamento. Novas funcionalidades serão implementadas e atual
 
 ## Grupo:
 - **PO**: Luiz Fernando
-- **Scrun Master**: Hugo Vinicius
-- **Dev**: Thaina Pontes
+- **Scrun Master**: Hugo Vinícius
+- **Dev**: Thainá Pontes
 - **Dev**: Michel Serpa
 - **Dev**: Lucas Vinicius
 
 ---
 
 ## Tela do Trello:
-- ![trello](https://github.com/user-attachments/assets/f4d32834-895f-4e4a-8ca2-2938d90da40d)
+![trello](https://github.com/user-attachments/assets/f4d32834-895f-4e4a-8ca2-2938d90da40d)
 
 ---
 
 ## Diagrama de Atividade:
-- ![diagrama de atividade](https://github.com/user-attachments/assets/5febc01f-d84c-4335-a78a-f953854a7509)
+ ![diagrama de atividade](https://github.com/user-attachments/assets/5febc01f-d84c-4335-a78a-f953854a7509)
 
 ---
 
 ## Tela do Figma:
-- ![figma](https://github.com/user-attachments/assets/d3412d75-6836-4451-86c6-5b0287198623)
+ ![figma](https://github.com/user-attachments/assets/d3412d75-6836-4451-86c6-5b0287198623)
 
 ---
 
-## Vidéo do Figma:
--
+## Vídeo do Figma:
+https://github.com/user-attachments/assets/9b089995-38ea-4fb2-a2ae-e801c386ee8b
+
+
 
 
