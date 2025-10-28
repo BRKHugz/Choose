@@ -26,6 +26,11 @@ public class Cadastro {
         return this.email;
     }
 
+    public static void limparTela(){
+        System.out.print("\033[H\033[2J"); // Limpar a tela
+        System.out.flush();
+    }
+
     public void cadastrar(){
         Scanner input = new Scanner(System.in);
         System.out.println("\n**************************");
@@ -55,5 +60,14 @@ public class Cadastro {
 
         System.out.println("\nUsuário cadastrado com sucesso! ✅\n");
         input.close();
+    }
+
+    public void ExibirDadosDoUsuario(){
+        // limparTela();
+        System.out.println("Nome: "+this.nome+" ✅");
+        System.out.println("CPF: "+this.cpf+" ✅");
+        System.out.println("E-mail: "+this.email+" ✅");
+        System.out.println("Região: "+this.regiao+" ✅");
+        System.out.println("Idade: "+this.idade+" ✅");
     }
 }
