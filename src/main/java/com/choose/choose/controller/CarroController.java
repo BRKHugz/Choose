@@ -21,13 +21,13 @@ public class CarroController {
     @Autowired
     private CarroService serviceCarro; // Composição com atributo de uma outra classe
 
-    @PostMapping("/cadastrarCarro")
+    @PostMapping("/cadastrar")
     public String cadastrarCarro(@RequestBody Carro carro){
         serviceCarro.salvarCarro(carro);
         return "Carro cadastrado com sucesso!";
     }
     
-    @GetMapping("/listarCarros")
+    @GetMapping("/listar")
     public List<Carro> listarCarros(){
         return serviceCarro.listarCarros();
     }

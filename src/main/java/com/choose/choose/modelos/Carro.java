@@ -1,8 +1,5 @@
 package com.choose.choose.modelos;
 
-import java.util.ArrayList;
-import java.util.List;
-
 import lombok.Data; // serve como um biblioteca para gerar getters e setters, por baixo dos panos
 
 @Data

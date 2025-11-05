@@ -20,4 +20,22 @@ public class UsuarioService {
         return usuarios;
     }
 
+    public boolean retornaEmail(Usuario usuario){
+        for(Usuario usuarioCadastrado : usuarios){
+            if(usuarioCadastrado.getEmail().equals(usuario.getEmail())){
+                return true; // já existe cadastro com esse email.
+            }
+        }
+        return false; // não encontrou igual
+    }
+
+    public String deletarUsuario(Usuario usuarioDelete){
+        for(Usuario pessoa : usuarios){
+            if(pessoa.getEmail().equals(usuarioDelete.getEmail())){
+                usuarios.remove(pessoa);
+                return "Usuário removido com sucesso";
+            }
+        }
+        return "Usuário não encontrado";
+    }
 }
