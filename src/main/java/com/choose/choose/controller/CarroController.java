@@ -44,11 +44,15 @@ public class CarroController {
 
         if(carro == null) return "Carro não encontrado";
         
-        if(precoFipe == null) return "Modelo não encontrado na tabela de preços fipe";
+        if(precoFipe == null) return "Modelo não encontrado na tabela fipe";
         
 
         double diferenca = carro.getPreco() - precoFipe;
 
-        return "Preço do usuário é: "+carro.getPreco()+" | Preço FIPE: "+precoFipe+" | diferença de preço: "+diferenca;
+        if (carro.getPreco() >= precoFipe){
+            return "| Preço do anuncio: "+carro.getPreco()+"\n| Preço desse carro na tabela FIPE: "+precoFipe+"\n| Diferença de preço: "+diferenca+"\n| Alerta: não recomendamos a compra desse carro, pois está acima do preço!";
+        } else{
+            return "| Preço do anuncio: "+carro.getPreco()+"\n| Preço desse carro na tabela FIPE: "+precoFipe+"\n| Diferença de preço: "+diferenca+"\n| Alerta: recomendamos a compra desse carro, pois está abaxido do preço da tabela fipe!";
+        }
     }
 }

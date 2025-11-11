@@ -20,22 +20,41 @@ public class UsuarioService {
         return usuarios;
     }
 
-    public boolean retornaEmail(Usuario usuario){
+    public boolean retornaNick(Usuario usuario){
         for(Usuario usuarioCadastrado : usuarios){
-            if(usuarioCadastrado.getEmail().equals(usuario.getEmail())){
+            
+            String nickCadastrado = usuarioCadastrado.getNick(); // desse jeito, torna a aplicação mais lenta
+            String nickNovo = usuario.getNick();
+
+            if(nickCadastrado.equals(nickNovo)){
                 return true; // já existe cadastro com esse email.
             }
         }
         return false; // não encontrou igual
     }
 
-    public String deletarUsuario(Usuario usuarioDelete){
+    public String deletarUsuario(String nick, Usuario usuarioDelete){
         for(Usuario pessoa : usuarios){
-            if(pessoa.getEmail().equals(usuarioDelete.getEmail())){
+            // a mesma ideia do método retorna nick
+            if(pessoa.getNick().equals(nick)){
                 usuarios.remove(pessoa);
                 return "Usuário removido com sucesso";
             }
         }
         return "Usuário não encontrado";
+    }
+
+    public String atualizarUsuario(String nick, Usuario usuarioAtualize){
+        for(Usuario usuarioCadastrado : usuarios){
+            if(usuarioCadastrado.getNick().equals(nick)){
+
+                usuarioCadastrado.setNome(usuarioAtualize.getNome());
+                usuarioCadastrado.setEmail(usuarioAtualize.getEmail());
+                usuarioCadastrado.setSenha(usuarioAtualize.getSenha());
+
+                return "Usuário atualizado com sucesso!";
+            }
+        }
+        return "Usuário não encontrado na lista!";
     }
 }

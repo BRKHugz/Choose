@@ -10,9 +10,11 @@ import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 
 
 @RestController
@@ -24,7 +26,7 @@ public class UsuarioController {
 
     @PostMapping("/cadastrar")
     public String cadastrarUsuario(@RequestBody Usuario usuario){
-        if(usuarioService.retornaEmail(usuario)){
+        if(usuarioService.retornaNick(usuario)){
             return "Usuário já cadastrado";
         }
         usuarioService.salvarUsuario(usuario);
@@ -36,8 +38,13 @@ public class UsuarioController {
         return usuarioService.listarUsuario();
     }
 
-    @DeleteMapping("/deletar")
-    public String deletarUsuario(@RequestBody Usuario usuarioRemove){
-        return usuarioService.deletarUsuario(usuarioRemove);
+    @DeleteMapping("/deletar/{nick}")
+    public String deletarUsuario(@PathVariable String nick, @RequestBody Usuario usuarioRemove){
+        return usuarioService.deletarUsuario(nick, usuarioRemove);
+    }
+
+    @PutMapping("/editar/{nick}")
+    public String editarUsuario(@PathVariable String nick, Usuario usuarioEditado){
+        return usuarioService.atualizarUsuario(nick, usuarioEditado);
     }
 }
