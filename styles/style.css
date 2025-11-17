@@ -29,6 +29,8 @@ body {
 
 .logo img {
     width: 255px;
+    height: auto;
+    padding: 5px;
 }
 
 .search-bar {
@@ -158,11 +160,11 @@ main {
 .card {
     background-color: #c9c9c9;
     border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.01);
     overflow: hidden;
     min-width: 290px; /* Largura mínima de cada card */
     flex-shrink: 0;
-    transition: transform 0.2s ease-in-out;
+    transition: transform 0.15s ease-in-out;
 }
 
 .card:hover {
@@ -229,4 +231,54 @@ main {
     color: #888;
     padding-top: 1rem;
     border-top: 1px solid #f0f0f0;
+}
+
+/*Form login*/
+.form-login{
+    text-align: center;
+}
+
+.form-login img{
+    max-width: 240px;
+}
+
+.form-login input {
+    padding: 1rem 1rem;
+    font-size: 1rem;
+    width: 40%;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    max-width: 500px;
+    margin: 0 2rem;
+    margin-top: 32px;
+}
+
+.form-login button {
+    margin: 2rem;
+    width: 40%;
+    max-width: 150px;
+    height: 30px;
+    border-radius: 20px;
+    border: 1px solid #ddd;
+    background-color: #E1A122;
+    color: #fff;
+}
+
+/* Footer */
+.footer {
+    background-color: #FEFAF1;
+    text-align: center;
+    padding: 15px;
+    margin-top: 40px;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.footer p {
+    color: #333;
+    font-size: 1rem;
+}
+
+.footer img {
+    max-width: 36px;
+    margin-left: 10px;
 }
