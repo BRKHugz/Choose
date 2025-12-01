@@ -1,0 +1,775 @@
+/* --- Configurações Globais --- */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+    background-color: #fff; /* Fundo levemente cinza da página */
+}
+
+/* --- Cabeçalho Principal --- */
+.main-header {
+    background-color: #FEFAF1;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    border-bottom: 1px solid #e0e0e0;
+}
+
+/* --- 1. Barra de Navegação Superior (Logo, Busca, Botões) --- */
+.top-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.logo img {
+    width: 255px;
+    height: auto;
+    padding: 5px;
+}
+
+.search-bar {
+    display: flex;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    overflow: hidden;
+    flex-grow: 1;
+    max-width: 500px;
+    margin: 0 2rem;
+}
+
+.search-bar input {
+    border: none;
+    padding: 0.75rem 1rem;
+    font-size: 1rem;
+    width: 100%;
+}
+
+.search-bar input:focus {
+    outline: none;
+}
+
+.search-bar button {
+    border: none;
+    background-color: #fff;
+    padding: 0 1rem;
+    cursor: pointer;
+    color: #555;
+}
+
+.search-bar button a{
+    text-decoration: none;
+    color: #555;
+}
+.user-actions {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.login-btn {
+    font-size: 1rem;
+    color: #333;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 0.5rem;
+}
+
+.announce-btn {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    background-color: #004799; /* Azul do botão */
+    color: #fff;
+    padding: 0.75rem 1rem;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 0.9rem;
+}
+
+.loged-btn {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    background-color: #fff; /* Azul do botão */
+    color: #000;
+    padding: 0.75rem 1rem;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 0.9rem;
+    border: 1px solid #ddd;
+}
+.announce-btn .material-symbols-outlined {
+    font-size: 1.2rem;
+}
+
+/* --- 2. Barra de Navegação de Categorias --- */
+.category-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.75rem 2rem;
+    max-width: 1400px;
+    margin: 0 auto;
+    border-top: 1px solid #eee;
+}
+
+.category-btn {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    background-color: #E1A122; /* Amarelo do botão */
+    color: #333;
+    padding: 0.6rem 1rem;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+.category-links {
+    display: flex;
+    gap: 1.5rem;
+    flex-grow: 1;
+    margin-left: 2rem;
+}
+
+.category-links a {
+    text-decoration: none;
+    color: #004799;
+    font-weight: 500;
+    font-size: 0.95rem;
+}
+
+.notification-btn {
+    color: #E1A122;
+    text-decoration: none;
+}
+
+/* --- Conteúdo Principal (Cards) --- */
+main {
+    max-width: 1400px;
+    margin: 2rem auto;
+    padding: 0 2rem;
+}
+
+.most-searched h2 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 1.5rem;
+}
+
+.card-container {
+    display: flex;
+    gap: 1.5rem;
+    overflow-x: auto; /* Permite scroll horizontal */
+    padding-bottom: 1rem; /* Espaço para a barra de scroll */
+}
+
+.card-container a {
+    text-decoration: none;
+}
+/* --- Estilo do Card --- */
+.card {
+    background-color: #c9c9c9;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.01);
+    overflow: hidden;
+    min-width: 290px; /* Largura mínima de cada card */
+    flex-shrink: 0;
+    transition: transform 0.15s ease-in-out;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+}
+
+.card-content {
+    padding: 1rem;
+}
+
+.card-content h3 {
+    font-size: 1.1rem;
+    color: #222;
+    margin-bottom: 0.5rem;
+}
+
+.card-content .price {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #000;
+    margin-bottom: 1rem;
+}
+
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.tag {
+    font-size: 0.75rem;
+    font-weight: 500;
+    padding: 0.25rem 0.75rem;
+    border-radius: 16px;
+}
+
+/* Tags de exemplo (cores baseadas no print) */
+.tag-pink { background-color: #fce4ec; color: #d81b60; }
+.tag-teal { background-color: #e0f2f1; color: #00796b; }
+.tag-blue { background-color: #e3f2fd; color: #1e88e5; }
+.tag-purple { background-color: #f3e5f5; color: #8e24aa; }
+.tag-orange { background-color: #fff3e0; color: #f57c00; }
+.tag-green { background-color: #e8f5e9; color: #388e3c; }
+.tag-red { background-color: #ffebee; color: #c62828; }
+.tag-disabled {
+    background-color: #eee;
+    color: #eee;
+    min-width: 60px;
+    user-select: none;
+}
+
+.card-footer {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.8rem;
+    color: #888;
+    padding-top: 1rem;
+    border-top: 1px solid #f0f0f0;
+}
+
+/*Form login*/
+.form-login{
+    text-align: center;
+}
+
+.form-login img{
+    max-width: 240px;
+}
+
+.form-login input {
+    padding: 1rem 1rem;
+    font-size: 1rem;
+    width: 40%;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    max-width: 500px;
+    margin: 0 2rem;
+    margin-top: 32px;
+}
+
+.form-login button {
+    font-size: 1rem;
+    margin: 2rem;
+    width: 40%;
+    max-width: 150px;
+    height: 50px;
+    border-radius: 20px;
+    border: 1px solid #ddd;
+    background-color: #E1A122;
+    color: #fff;
+}
+
+.form-login a{
+    text-decoration: none;
+    color: #fff;
+}
+
+/*Tela Carro*/
+.layout-anuncio {
+  display: grid;
+  grid-template-columns: 2fr 1fr; 
+  gap: 24px;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: sans-serif;
+}
+
+.galeria {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: 120px;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.destaque { 
+    grid-column: span 2;
+    grid-row: span 2; 
+}
+
+.galeria img { 
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover; 
+    border-radius: 8px; 
+}
+
+.info-carro h1 { 
+    margin-bottom: 10px; 
+    font-size: 24px; 
+}
+
+.tags span {
+  background: #eee;
+  padding: 5px 10px;
+  border-radius: 15px;
+  font-size: 12px;
+  margin-right: 5px;
+  display: inline-block;
+}
+
+.sidebar-direita {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.card {
+  background: white;
+  padding: 24px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  border: 1px solid #f0f0f0;
+}
+
+.card-preco .preco { 
+    font-size: 32px; 
+    margin: 15px 0; 
+}
+
+.btn-chat {
+  width: 100%;
+  padding: 12px;
+  background-color: #fca311;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.sidebar-direita {
+  position: sticky;
+  top: 20px;
+  height: fit-content;
+}
+
+/*Anuncio*/
+.badge-azul {
+  background-color: #004aad;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 6px;
+  font-weight: bold;
+  font-size: 14px;
+  display: inline-block;
+  margin-bottom: 15px;
+}
+
+.form-container {
+  background-color: #f2f2f2;
+  padding: 40px;
+  border-radius: 8px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.grid-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 40px;
+  row-gap: 20px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 8px;
+  color: #000;
+  font-size: 15px;
+}
+
+.required {
+  color: red;
+}
+
+.main input, select {
+  width: 100%;
+  padding: 10px 15px;
+  border-radius: 20px;
+  border: 1px solid #ccc;
+  background-color: white;
+  font-size: 14px;
+  box-sizing: border-box;
+  color: #555;
+  height: 42px;
+}
+
+.area-botao {
+  grid-column: span 2;
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 20px;
+}
+.area-botao a{
+    text-decoration: none;
+    color: #fff;
+}
+.btn-continuar {
+  background-color: #004aad;
+  color: white;
+  border: none;
+  padding: 12px 30px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.btn-continuar:hover {
+  background-color: #003380;
+}
+
+.selecao-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px; 
+  max-width: 1000px;
+  margin: 0 auto 60px auto;
+}
+
+/* Estilo Comum aos dois cartões */
+.card-upload, .card-placa {
+  background-color: #f2f2f2; /* Cinza claro */
+  border-radius: 20px;
+  padding: 50px 20px;
+  text-align: center;
+  /* Flexbox para centralizar tudo verticalmente dentro do card */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 250px; /* Altura fixa para ficarem iguais */
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.card-upload:hover, .card-placa:hover {
+  transform: translateY(-2px); /* Efeito suave ao passar o mouse */
+  background-color: #e8e8e8;
+}
+
+/* Ícones */
+.icon-area {
+  margin-bottom: 20px;
+  opacity: 0.8;
+}
+
+/* Textos dentro dos cards */
+p, label {
+  color: #333;
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+small {
+  color: #666;
+  font-size: 14px;
+}
+
+/* Input da Placa (Estilizado) */
+#placa-input {
+  background: transparent;
+  border: none;
+  font-size: 24px;
+  text-align: center;
+  letter-spacing: 5px; /* Espaça as letras para ficar elegante */
+  width: 250px;
+  margin-top: 15px;
+  color: #333;
+  outline: none;
+  border-bottom: 1px solid transparent;
+}
+
+#placa-input::placeholder {
+  color: #999;
+  letter-spacing: 3px;
+}
+
+#placa-input:focus {
+  border-bottom: 2px solid #004aad;
+}
+
+
+.rodape-botoes {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.rodape-botoes a{
+    text-decoration: none;
+    color: #fff;
+}
+
+button {
+  background-color: #004aad;
+  color: white;
+  border: none;
+  padding: 12px 40px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.main button:hover {
+  background-color: #003380;
+}
+
+.painel-cinza {
+  background-color: #f2f2f2;
+  border-radius: 10px;
+  padding: 40px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+
+.grid-conteudo {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  margin-bottom: 40px;
+}
+
+/* Estilo geral dos Labels */
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 10px;
+  font-size: 16px;
+  color: #000;
+}
+
+/* Estilo dos Inputs (Pílula) */
+.main input {
+  width: 100%;
+  padding: 12px 20px;
+  border-radius: 25px; /* Bem arredondado */
+  border: 1px solid transparent; /* Sem borda visível por padrão */
+  background-color: white;
+  font-size: 14px;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+  outline: none;
+}
+
+/* Opcional: Aquele input "Qual a cor" parece ter uma borda cinza fina no print */
+.input-borda-fina {
+  border: 1px solid #aaa;
+}
+
+/* --- ESTILO DAS TAGS (Airbag, Som, etc) --- */
+.area-tags {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap; /* Se tiver muitos, quebra linha */
+  margin-top: -5px;
+}
+
+.tag {
+  background-color: white;
+  padding: 8px 20px;
+  border-radius: 20px;
+  font-size: 14px;
+  color: #555;
+  cursor: pointer;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+/* --- ESTILO DA ÁREA DE TEXTO (Direita) --- */
+.coluna-direita {
+  display: flex;
+  flex-direction: column;
+}
+
+textarea {
+  width: 100%;
+  flex-grow: 1; /* Faz o textarea ocupar toda a altura disponível */
+  min-height: 200px; /* Altura mínima garantida */
+  padding: 20px;
+  border-radius: 15px; /* Bordas levemente menos arredondadas que os inputs */
+  border: none;
+  resize: none; /* Impede o usuário de redimensionar e quebrar o layout */
+  font-family: 'Arial', sans-serif;
+  font-size: 14px;
+  color: #555;
+  outline: none;
+}
+
+.rodape-botoes {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid transparent;
+}
+
+.main button {
+  color: white;
+  border: none;
+  padding: 12px 40px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.painel-final {
+  background-color: #f2f2f2;
+  border-radius: 12px;
+  padding: 40px;
+  max-width: 1000px;
+  margin: 0 auto;
+  
+  /* Garante uma altura mínima para parecer com o print */
+  min-height: 450px; 
+  
+  /* Flexbox para jogar o conteudo pro meio e botões pro final */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* --- CONTEÚDO CENTRAL --- */
+.conteudo-central {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centraliza tudo horizontalmente */
+  justify-content: center; /* Centraliza verticalmente na área disponível */
+  flex-grow: 1; /* Ocupa todo o espaço vazio disponível */
+  gap: 40px; /* Espaço entre o bloco FIPE e o Input */
+  padding-bottom: 60px;
+}
+
+/* Bloco FIPE */
+.bloco-fipe h2 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  text-align: center;
+  color: #000;
+}
+
+.box-valor-fipe {
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 25px; /* Pílula */
+  padding: 10px 40px;
+  font-weight: bold;
+  font-size: 18px;
+  color: #000;
+  display: inline-block; /* Para ficar do tamanho do texto */
+}
+
+/* Bloco Input (Valor) */
+.bloco-input-valor {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.bloco-input-valor label {
+  position: absolute;
+  right: 52%;
+  font-weight: bold;
+  font-size: 20px;
+  color: #000;
+  margin-right: 160px;
+  top: 50%;
+  transform: translateY(-50%);
+  white-space: nowrap;
+}
+
+.input-valor {
+  border: 1px solid #ddd; /* Borda suave */
+  border-radius: 25px;
+  padding: 12px 20px;
+  width: 300px;
+  outline: none;
+  font-size: 16px;
+  background: white;
+  text-align: center; /* Opcional: texto digitado no meio */
+}
+
+/* --- BOTÕES --- */
+.rodape-botoes {
+  display: flex;
+  justify-content: space-between; /* Um em cada ponta */
+  width: 100%;
+}
+
+.main button {
+  border: none;
+  padding: 12px 40px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 6px;
+  cursor: pointer;
+  color: white;
+}
+
+.btn-voltar {
+  background-color: #004aad; /* Azul */
+}
+
+.btn-voltar:hover {
+  background-color: #003380;
+}
+
+.btn-finalizar {
+  background-color: #dda623; /* Amarelo/Laranja queimado */
+}
+
+.btn-finalizar:hover {
+  background-color: #c4921b;
+}
+
+/* Footer */
+.footer {
+    background-color: #FEFAF1;
+    text-align: center;
+    padding: 15px;
+    margin-top: 40px;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.footer p {
+    color: #333;
+    font-size: 1rem;
+}
+
+.footer img {
+    max-width: 36px;
+    margin-left: 10px;
+}

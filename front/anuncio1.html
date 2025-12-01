@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="imagex/png" href="assets/icon.png">
+    <title>Choose</title>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+
+    <header class="main-header">
+        
+        <nav class="top-nav">
+            <div class="logo"><a href="indexlogin.html"><img src="assets/logo.png" alt="Logo Choose"></a></div>
+            
+            <div class="search-bar">
+                <input type="text" placeholder="Buscar">
+                <button aria-label="Buscar">
+                    <a href="busca.html">
+                        <span class="material-symbols-outlined">search</span>
+                    </a>
+                </button>
+            </div>
+
+            <div class="user-actions">
+                <a href="" class="loged-btn">Olá, Olivia!
+                    <span class="material-symbols-outlined">menu</span>
+                </a>
+                    
+                <a href="anuncio1.html" class="announce-btn">
+                    <span class="material-symbols-outlined">add</span>
+                    Anunciar grátis
+                </a>
+            </div>
+        </nav>
+
+        <nav class="category-nav">
+            <a href="#" class="category-btn">
+                <span class="material-symbols-outlined">menu</span>
+                Categorias
+            </a>
+            
+            <div class="category-links">
+                <a href="busca.html">Carros</a>
+                <a href="busca.html">Motos</a>
+                <a href="busca.html">Tratores</a>
+                <a href="busca.html">Caminhões</a>
+                <a href="busca.html">Helicópteros</a>
+                <a href="busca.html">Ônibus</a>
+                <a href="busca.html">Bicicletas</a>
+                <a href="busca.html">Carroças</a>
+            </div>
+
+            <a href="#" class="notification-btn" aria-label="Notificações">
+                <span class="material-symbols-outlined">notifications</span>
+            </a>
+        </nav>
+    </header>
+
+    <main class="main">
+        <div class="titulo-pagina">
+            <h2>Crie seu anuncio</h2>
+            <br>
+        </div>
+
+        <div class="form-container">
+            <form class="grid-form">
+                <div class="campo">
+                    <label>Qual veículo você deseja anunciar?</label>
+                    <select>
+                        <option>Carro</option>
+                        <option>Moto</option>
+                    </select>
+                </div>
+
+                <div class="campo">
+                    <label>Qual o modelo? <span class="required">*</span></label>
+                    <input type="text" placeholder="Informar modelo">
+                </div>
+
+                <div class="campo">
+                    <label>Qual o ano do veículo? <span class="required">*</span></label>
+                    <input type="text" placeholder="Informar ano">
+                </div>
+
+                <div class="campo">
+                    <label>Qual a versão do veículo? <span class="required">*</span></label>
+                    <input type="text" placeholder="Informar versão">
+                </div>
+
+                <div class="campo">
+                    <label>Câmbio</label>
+                    <select>
+                        <option selected disabled></option> 
+                        <option>Automático</option>
+                        <option>Manual</option>
+                    </select>
+                </div>
+
+                <div class="campo">
+                    <label>Potência do motor</label>
+                    <select>
+                        <option selected disabled></option>
+                        <option>1.0</option>
+                        <option>1.6</option>
+                        <option>2.0</option>
+                    </select>
+                </div>
+
+                <div class="campo">
+                    <label>Quantidade de portas</label>
+                    <select>
+                        <option selected disabled></option>
+                        <option>2</option>
+                        <option>4</option>
+                    </select>
+                </div>
+
+                <div class="campo">
+                    <label>Tipo de veículo</label>
+                    <select>
+                        <option selected disabled></option>
+                        <option>Sedan</option>
+                        <option>Hatch</option>
+                    </select>
+                </div>
+
+                <div class="area-botao">
+                    <button type="button" class="btn-continuar"><a href="anuncio2.html">Continuar</a></button>
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div>
+            <p>&copy;Choose Moto & Carro Ltda.</p>
+            <p>Todos os direitos reservados.</p>
+            <br>
+            <img src="assets/ig.svg" alt="Instagram">
+            <img src="assets/wpp.svg" alt="Whatsapp">
+            <img src="assets/in.svg" alt="LinkedIn">
+        </div>
+    </footer>
+</body>
+</html>
