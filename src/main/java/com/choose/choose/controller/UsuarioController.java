@@ -44,7 +44,7 @@ public class UsuarioController {
     }
 
     @PutMapping("/editar/{nick}")
-    public String editarUsuario(@PathVariable String nick, Usuario usuarioEditado){
+    public String editarUsuario(@PathVariable String nick, @RequestBody Usuario usuarioEditado){
         return usuarioService.atualizarUsuario(nick, usuarioEditado);
     }
 }
