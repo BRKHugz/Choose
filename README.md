@@ -44,9 +44,9 @@ O projeto está em andamento. Novas funcionalidades serão implementadas e atual
 
 ## Grupo:
 - **PO**: Luiz Fernando Toledo
-- **Scrum Master**: Hugo Vinícius
+- **Scrum Master**: Michel Serpa
 - **Dev**: Thainá Pontes
-- **Dev**: Michel Serpa
+- **Dev**: Hugo Vinícius
 - **Dev**: Lucas Vinicius
 
 ---
