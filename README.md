@@ -20,11 +20,11 @@ Choose é um projeto de plataforma online em desenvolvimento, voltado para **pes
 Backend: 
 - Java  
 - Spring Boot  
-- Angular  
 
 Frontend / Interface:  
 - HTML  
-- CSS  
+- CSS
+- Angular  
 
 ---
 
@@ -43,8 +43,8 @@ O projeto está em andamento. Novas funcionalidades serão implementadas e atual
 ---
 
 ## Grupo:
-- **PO**: Luiz Fernando
-- **Scrun Master**: Hugo Vinícius
+- **PO**: Luiz Fernando Toledo
+- **Scrum Master**: Hugo Vinícius
 - **Dev**: Thainá Pontes
 - **Dev**: Michel Serpa
 - **Dev**: Lucas Vinicius
