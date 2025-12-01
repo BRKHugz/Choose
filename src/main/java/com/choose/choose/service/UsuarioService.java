@@ -23,11 +23,11 @@ public class UsuarioService {
     public boolean retornaNick(Usuario usuario){
         for(Usuario usuarioCadastrado : usuarios){
             
-            String nickCadastrado = usuarioCadastrado.getNick(); // desse jeito, torna a aplicação mais lenta
+            String nickCadastrado = usuarioCadastrado.getNick();
             String nickNovo = usuario.getNick();
 
             if(nickCadastrado.equals(nickNovo)){
-                return true; // já existe cadastro com esse email.
+                return true; // já existe cadastro com esse Nick.
             }
         }
         return false; // não encontrou igual

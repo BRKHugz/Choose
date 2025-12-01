@@ -32,6 +32,12 @@ public class CarroController {
         return serviceCarro.listarCarros();
     }
 
+    @GetMapping("/buscar/{carro}")
+    public Carro pesquisarCarro(@PathVariable String carro){
+        Carro carroEncontrado = serviceCarro.buscarModelo(carro);
+        return carroEncontrado;
+    }
+
     @GetMapping("/comparar/{modelo}")
     public String comparaPreco(@PathVariable String modelo){
         Carro carro = serviceCarro.buscarModelo(modelo);
