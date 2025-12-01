@@ -38,7 +38,7 @@ Frontend / Interface:
 
 ## Status do projeto
 
-O projeto está em andamento. Novas funcionalidades serão implementadas e atualizadas regularmente no repositório.
+Novas funcionalidades serão implementadas e atualizadas regularmente no repositório.
 
 ---
 
