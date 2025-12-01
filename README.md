@@ -20,11 +20,11 @@ Choose é um projeto de plataforma online em desenvolvimento, voltado para **pes
 Backend: 
 - Java  
 - Spring Boot  
-- Angular  
 
 Frontend / Interface:  
 - HTML  
-- CSS  
+- CSS
+- Angular  
 
 ---
 
