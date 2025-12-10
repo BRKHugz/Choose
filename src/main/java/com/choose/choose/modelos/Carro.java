@@ -29,5 +29,6 @@ public class Carro {
         this.preco = preco;
         this.cambio = cambio;
         this.quantidadeDePortas = quantidadeDePortas;
+        this.potenciaMotor = potenciaMotor;
     }
 }
